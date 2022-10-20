@@ -1,0 +1,5 @@
+A partir do driver de testes implementados for possível concluir:
+- A mudança de categoria no deposito não parece estar sendo atualizada desde o primeiro depósito, já que depois de 1 deposito de 50.000 a categoria ainda é Silver e depois de 2 depositos de 100.000 a categoria ainda se encontra como GOLD.
+- A taxa de bonus no saldo aplicadas no depósitos estão incorretas. o valor de dpoisto deve ser multiplicado por 1.01 para a categoria gold e multiplicado por 1.025 para categoria platinum.
+- O saldo retornado depois da retirada está equivocado, pois por algum motiov a o valor a ser retirado está sendo multiplicado por uma constante antes de diminuir o valor do saldo, o que está fora do escopo do problema.
+
