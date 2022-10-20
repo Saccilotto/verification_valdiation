@@ -1,7 +1,6 @@
 package com.lists;
 
 import java.io.*;
-import java.util.Scanner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.api.BeforeEach;
