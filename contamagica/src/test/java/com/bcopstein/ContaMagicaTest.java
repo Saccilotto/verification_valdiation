@@ -52,7 +52,7 @@ public class ContaMagicaTest {
         conta.deposito(100000.0);
         conta.deposito(100000.0);
 
-        double rEsp = 200000.0 + 100000.0*1.025;
+        double rEsp = 100000.0 + 100000.0*1.01 + 100000.0*1.025;
         double rObs = conta.getSaldo();
 
         Assertions.assertEquals(rEsp, rObs);
@@ -77,7 +77,7 @@ public class ContaMagicaTest {
         conta.deposito(100000.0);
         conta.retirada(50000.0);
 
-        double rEsp = 200000.0 - 50000.0;
+        double rEsp = 100000.0 + 100000.0*1.01 - 50000.0;
         double rObs = conta.getSaldo();
 
         Assertions.assertEquals(rEsp, rObs);
@@ -116,7 +116,7 @@ public class ContaMagicaTest {
 
         double rObs = conta.getSaldo();
 
-        System.out.println(conta.getSaldo());
+        //System.out.println(conta.getSaldo());
 
         Assertions.assertTrue(rObs > 0);
     }
